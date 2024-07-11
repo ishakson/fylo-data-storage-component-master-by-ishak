@@ -3,7 +3,7 @@
   --font-family-primary: "Raleway", sans-serif;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
-  --font-size-regular: 14px;
+  --font-size-regular: 1.4rem;
   --color-primary: linear-gradient(
     90deg,
     hsl(6, 100%, 80%),
@@ -13,4 +13,47 @@
   --color-neutral-grayish-blue: hsl(229, 7%, 55%);
   --color-neutral-dark-blue: hsl(228, 56%, 26%);
   --color-neutral-very-dark-blue: hsl(229, 57%, 11%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  font-size:  var(--font-size-regular);
+  background: var(--color-neutral-very-dark-blue);
+  color: var(--color-neutral-pale-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  color: var(--color-neutral-pale-blue);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-regular);
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+
+}
+.attribution a:hover {
+  text-decoration: underline;
 }
